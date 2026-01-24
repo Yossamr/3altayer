@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover" />
+    
+    <!-- PWA Settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#FF6600" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <title>Al-Tayyar Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+    <script>
+      tailwind.config = {
+          darkMode: "class",
+          theme: {
+              extend: {
+                  colors: {
+                      primary: "#FF6600", // The deep Orange from the flyer background
+                      secondary: "#29ABE2", // The Cyan/Blue from the sky/text
+                      accent: "#FFCC00", // The Yellow/Gold from "Al-Tayyar" text
+                      "brand-red": "#ED1C24", // Flag red
+                      "background-light": "#FFFBF5", 
+                      "background-dark": "#111111", 
+                      "surface-light": "#FFFFFF",
+                      "surface-dark": "#1E1E1E",
+                  },
+                  fontFamily: {
+                      display: ["Cairo", "sans-serif"],
+                      body: ["Cairo", "sans-serif"],
+                  },
+                  borderRadius: {
+                      DEFAULT: "1rem",
+                      'xl': '1.5rem',
+                      '2xl': '2rem',
+                      '3xl': '2.5rem',
+                  },
+                  boxShadow: {
+                      'bold': '0 4px 0 0 rgba(0,0,0,0.1)',
+                      'bold-hover': '0 6px 0 0 rgba(0,0,0,0.1)',
+                      'floating': '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
+                      'text-outline': '2px 2px 0px #000000', // To simulate the stroke on the logo text
+                  },
+                  spacing: {
+                      'safe': 'env(safe-area-inset-bottom)',
+                      'safe-top': 'env(safe-area-inset-top)',
+                  }
+              },
+          },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Cairo', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        overscroll-behavior-y: none; /* Prevent pull-to-refresh on mobile */
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FF6600;
+        border-radius: 4px;
+      }
+      
+      .chunk-shadow {
+          box-shadow: 0 4px 0 0 rgba(0,0,0,0.15);
+      }
+      .chunk-shadow-lg {
+          box-shadow: 0 6px 0 0 rgba(0,0,0,0.15);
+      }
+      .chunk-shadow:active {
+          box-shadow: 0 2px 0 0 rgba(0,0,0,0.15);
+          transform: translateY(2px);
+      }
+      
+      .text-stroke {
+          -webkit-text-stroke: 1px black; 
+          text-stroke: 1px black;
+      }
+      .text-stroke-white {
+          -webkit-text-stroke: 2px white;
+          text-stroke: 2px white;
+      }
+      
+      /* Ensure proper spacing for notches - Increased to 3rem minimum */
+      .pt-safe-top {
+          padding-top: max(3rem, env(safe-area-inset-top));
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "jsqr": "https://esm.sh/jsqr@^1.4.0",
+    "@libsql/client": "https://esm.sh/@libsql/client@^0.17.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 antialiased pb-safe overflow-x-hidden selection:bg-primary selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "al-tayyar-delivery",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "homepage": "https://Yossamr.github.io/3altayer",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.6.0",
+    "jsqr": "^1.4.0",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.10.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  }
+}

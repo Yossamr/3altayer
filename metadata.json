@@ -1,0 +1,8 @@
+{
+  "name": "Al-Tayyar Delivery System",
+  "description": "A zone-based, proof-driven delivery management system designed for the Egyptian market. Features varying user roles, offline support, and cash handling workflows.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
