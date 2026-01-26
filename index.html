@@ -1,15 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover" />
     
-    <!-- PWA Settings -->
+    <!-- PWA Settings for Android -->
+    <meta name="theme-color" content="#FF6600" />
+    <link rel="manifest" href="/3altayer/assets/manifest-gybqejSx.json" />
+
+    <!-- PWA Settings for iOS (Critical for Native Feel) -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="theme-color" content="#FF6600" />
-    <link rel="manifest" href="/3altayer/assets/manifest-B7e6vFBx.json" />
+    <meta name="apple-mobile-web-app-title" content="ع الطاير" />
+    
+    <!-- iOS Icon -->
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
+    <link rel="apple-touch-icon" sizes="167x167" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
 
+    <!-- Browser Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
+    
     <title>Al-Tayyar Delivery</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
@@ -58,6 +73,7 @@
         font-family: 'Cairo', sans-serif;
         -webkit-tap-highlight-color: transparent;
         overscroll-behavior-y: none; /* Prevent pull-to-refresh on mobile */
+        user-select: none; /* Feel like app, not text */
       }
       /* Custom scrollbar */
       ::-webkit-scrollbar {
@@ -95,6 +111,11 @@
       .pt-safe-top {
           padding-top: max(3rem, env(safe-area-inset-top));
       }
+
+      /* Disable form zooming on iOS */
+      input, select, textarea {
+        font-size: 16px !important;
+      }
     </style>
 
 <link rel="stylesheet" href="/index.css">
@@ -115,7 +136,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/3altayer/assets/index-DlPkigxr.js"></script>
+  <script type="module" crossorigin src="/3altayer/assets/index-BpaeKgN4.js"></script>
 </head>
   <body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 antialiased pb-safe overflow-x-hidden selection:bg-primary selection:text-white">
     <div id="root"></div>
