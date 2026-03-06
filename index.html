@@ -6,64 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover" />
     
     <!-- PWA Settings for Android -->
-    <meta name="theme-color" content="#FF6600" />
-    <link rel="manifest" href="/3altayer/assets/manifest-gybqejSx.json" />
+    <meta name="theme-color" content="#121212" />
+    <link rel="manifest" href="/assets/manifest-BJCVOUJ9.json" />
 
     <!-- PWA Settings for iOS (Critical for Native Feel) -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="ع الطاير" />
+    <meta name="apple-mobile-web-app-title" content="مشاوير" />
     
     <!-- iOS Icon -->
-    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
-    <link rel="apple-touch-icon" sizes="152x152" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
-    <link rel="apple-touch-icon" sizes="167x167" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1cWwKiRbhHDQfoR92su87ncLGjEB4kXE4" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://lh3.googleusercontent.com/d/1cWwKiRbhHDQfoR92su87ncLGjEB4kXE4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://lh3.googleusercontent.com/d/1cWwKiRbhHDQfoR92su87ncLGjEB4kXE4" />
+    <link rel="apple-touch-icon" sizes="167x167" href="https://lh3.googleusercontent.com/d/1cWwKiRbhHDQfoR92su87ncLGjEB4kXE4" />
 
     <!-- Browser Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
-    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/d/1xWGm1mzXPy9y33jFux2Lqz3lJhVRgXUx" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/1cWwKiRbhHDQfoR92su87ncLGjEB4kXE4" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://lh3.googleusercontent.com/d/1cWwKiRbhHDQfoR92su87ncLGjEB4kXE4" />
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/d/1cWwKiRbhHDQfoR92su87ncLGjEB4kXE4" />
     
-    <title>Al-Tayyar Delivery</title>
+    <title>مشاوير دمنهور</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
     
-    <!-- LEAFLET MAPS (OpenStreetMap) -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
     <script>
       tailwind.config = {
           darkMode: "class",
           theme: {
               extend: {
                   colors: {
-                      primary: "#FF6600", // The deep Orange from the flyer background
-                      secondary: "#29ABE2", // The Cyan/Blue from the sky/text
-                      accent: "#FFCC00", // The Yellow/Gold from "Al-Tayyar" text
-                      "brand-red": "#ED1C24", // Flag red
-                      "background-light": "#FFFBF5", 
-                      "background-dark": "#111111", 
-                      "surface-light": "#FFFFFF",
-                      "surface-dark": "#1E1E1E",
+                      primary: "#FFD400", // Electric Yellow - Speed & Distinction
+                      secondary: "#00E676", // Mint Green - Success & Confirmation
+                      background: "#121212", // Deep Charcoal
+                      surface: "#1E1E1E", // Lighter Charcoal for Cards
+                      "surface-highlight": "#2C2C2C",
+                      text: "#FFFFFF",
+                      muted: "#A0A0A0",
+                      danger: "#FF3B30",
                   },
                   fontFamily: {
                       display: ["Cairo", "sans-serif"],
                       body: ["Cairo", "sans-serif"],
                   },
                   borderRadius: {
-                      DEFAULT: "1rem",
-                      'xl': '1.5rem',
-                      '2xl': '2rem',
-                      '3xl': '2.5rem',
+                      DEFAULT: "0.75rem",
+                      'xl': '1rem',
+                      '2xl': '1.5rem',
+                      '3xl': '2rem',
                   },
                   boxShadow: {
-                      'bold': '0 4px 0 0 rgba(0,0,0,0.1)',
-                      'bold-hover': '0 6px 0 0 rgba(0,0,0,0.1)',
-                      'floating': '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
-                      'text-outline': '2px 2px 0px #000000', // To simulate the stroke on the logo text
+                      'glow': '0 0 20px rgba(255, 212, 0, 0.15)',
+                      'card': '0 8px 32px rgba(0, 0, 0, 0.4)',
                   },
                   spacing: {
                       'safe': 'env(safe-area-inset-bottom)',
@@ -76,74 +70,77 @@
     <style>
       body {
         font-family: 'Cairo', sans-serif;
+        background-color: #121212;
+        color: #FFFFFF;
         -webkit-tap-highlight-color: transparent;
-        overscroll-behavior-y: none; /* Prevent pull-to-refresh on mobile */
-        user-select: none; /* Feel like app, not text */
+        overscroll-behavior-y: none;
+        user-select: none;
       }
-      /* Custom scrollbar */
+      /* Custom scrollbar for Dark UI */
       ::-webkit-scrollbar {
-        width: 4px;
+        width: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: transparent;
+        background: #121212;
       }
       ::-webkit-scrollbar-thumb {
-        background: #FF6600;
-        border-radius: 4px;
+        background: #333;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FFD400;
       }
       
-      .chunk-shadow {
-          box-shadow: 0 4px 0 0 rgba(0,0,0,0.15);
-      }
-      .chunk-shadow-lg {
-          box-shadow: 0 6px 0 0 rgba(0,0,0,0.15);
-      }
-      .chunk-shadow:active {
-          box-shadow: 0 2px 0 0 rgba(0,0,0,0.15);
-          transform: translateY(2px);
+      .glass-panel {
+          background: rgba(30, 30, 30, 0.7);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border: 1px solid rgba(255, 255, 255, 0.05);
       }
       
-      .text-stroke {
-          -webkit-text-stroke: 1px black; 
-          text-stroke: 1px black;
-      }
-      .text-stroke-white {
-          -webkit-text-stroke: 2px white;
-          text-stroke: 2px white;
-      }
-      
-      /* Ensure proper spacing for notches - Increased to 3rem minimum */
+      /* Ensure proper spacing for notches */
       .pt-safe-top {
           padding-top: max(3rem, env(safe-area-inset-top));
       }
 
-      /* Disable form zooming on iOS */
       input, select, textarea {
         font-size: 16px !important;
+        background-color: #1E1E1E;
+        color: white;
+      }
+
+      @keyframes neon-dash {
+        0% { transform: scaleX(0); opacity: 0; transform-origin: left; }
+        50% { transform: scaleX(1); opacity: 1; transform-origin: left; }
+        51% { transform-origin: right; }
+        100% { transform: scaleX(0); opacity: 0; transform-origin: right; }
+      }
+
+      @keyframes logo-reveal {
+        0% { transform: scale(0.8); opacity: 0; filter: blur(10px); }
+        100% { transform: scale(1); opacity: 1; filter: blur(0); }
+      }
+
+      @keyframes glitch {
+        0% { text-shadow: 0.05em 0 0 rgba(255,0,0,0.75), -0.025em -0.05em 0 rgba(0,255,0,0.75), 0.025em 0.05em 0 rgba(0,0,255,0.75); }
+        14% { text-shadow: 0.05em 0 0 rgba(255,0,0,0.75), -0.025em -0.05em 0 rgba(0,255,0,0.75), 0.025em 0.05em 0 rgba(0,0,255,0.75); }
+        15% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,0.75), 0.025em 0.025em 0 rgba(0,255,0,0.75), -0.05em -0.05em 0 rgba(0,0,255,0.75); }
+        49% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,0.75), 0.025em 0.025em 0 rgba(0,255,0,0.75), -0.05em -0.05em 0 rgba(0,0,255,0.75); }
+        50% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75), 0.05em 0 0 rgba(0,255,0,0.75), 0 -0.05em 0 rgba(0,0,255,0.75); }
+        99% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75), 0.05em 0 0 rgba(0,255,0,0.75), 0 -0.05em 0 rgba(0,0,255,0.75); }
+        100% { text-shadow: -0.025em 0 0 rgba(255,0,0,0.75), -0.025em -0.025em 0 rgba(0,255,0,0.75), -0.025em -0.05em 0 rgba(0,0,255,0.75); }
+      }
+
+      @keyframes fade-in {
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0); }
       }
     </style>
 
-<link rel="stylesheet" href="/index.css">
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "jsqr": "https://esm.sh/jsqr@^1.4.0",
-    "@libsql/client": "https://esm.sh/@libsql/client@0.14.0/web",
-    "vite": "https://esm.sh/vite@^7.3.1",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
-    "recharts": "https://esm.sh/recharts@^3.7.0",
-    "@libsql/client/": "https://esm.sh/@libsql/client@^0.17.0/"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/3altayer/assets/index-Oq5dmAiD.js"></script>
+  <script type="module" crossorigin src="/assets/index-DAeR1VRX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CIGW-MKW.css">
 </head>
-  <body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 antialiased pb-safe overflow-x-hidden selection:bg-primary selection:text-white">
+  <body class="bg-background text-text antialiased pb-safe overflow-x-hidden selection:bg-primary selection:text-black">
     <div id="root"></div>
-</body>
+  </body>
 </html>
